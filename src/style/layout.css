@@ -1,0 +1,74 @@
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: rgb(194, 194, 198);
+}
+.content{
+    min-height: 100vh;
+    flex-grow: 1;
+    background-color: rgb(162, 169, 169);
+    right: 0;
+    margin-left: 250px;
+}
+.sidebar{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 250px;
+    background: linear-gradient(60deg,rgb(165, 158, 158),white);
+    align-items: center;
+    
+    gap: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.logo{
+    height: 90px;
+    width: 96%;
+    position:relative;
+    border: 2px solid rgb(219, 214, 214);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: transparent;
+    background: linear-gradient(30deg,rgb(0, 183, 255),black);
+    background-clip: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-link{
+    height: 60px;
+    width: 78%;
+    border-radius: 20px;
+    border: 1px solid rgb(187, 183, 183);
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    transition: all 0.4s ease;
+}
+.nav-link:hover{
+    background-color: rgb(159, 199, 199);
+    box-shadow: 0 0 10px rgb(188, 245, 242);
+    border: 1px solid white;
+}
+.nav-icon{
+    font-size: 25px;
+}
+.nav-link.active {
+    background-color: rgba(93, 226, 226, 0.504);
+  }
+  
